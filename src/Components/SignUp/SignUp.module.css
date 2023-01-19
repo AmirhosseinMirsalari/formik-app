@@ -1,0 +1,107 @@
+.signUp {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 12rem;
+}
+
+.title {
+  align-self: flex-start;
+}
+
+.title p {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+form {
+  width: 100%;
+}
+
+.formControl {
+  margin: 1.3rem 0;
+}
+
+.nameBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nameBox div {
+  width: 100%;
+  margin: 0 0.25rem;
+}
+
+.verification {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.verification div {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.verification button {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  min-width: 120px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.verify {
+  cursor: no-drop !important;
+  opacity: 0.5;
+}
+.verify:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 992px) {
+  .signUp {
+    width: 100%;
+    padding: 5rem;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .signUp {
+    width: 100%;
+    padding: 5rem 2rem;
+    border-radius: 5px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .submit {
+    margin-bottom: 2rem;
+  }
+  .nameBox {
+    flex-direction: column;
+  }
+  .nameBox > div {
+    margin-bottom: 1rem !important;
+  }
+  .formControl {
+    margin: 1rem 0;
+  }
+}
